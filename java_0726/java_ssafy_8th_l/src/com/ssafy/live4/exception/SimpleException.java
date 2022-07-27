@@ -1,0 +1,18 @@
+package com.ssafy.live4.exception;
+
+
+public class SimpleException {
+    public static void main(String[] args) {
+        //실행은 되지만 실행 중 예외 발생 -> unchecked Exception
+    	int[] intArray = {10};
+    	
+    	try {
+    		System.out.println(intArray[2]);
+    	}catch (ArrayIndexOutOfBoundsException e) {
+    		System.out.printf("예외가 발생했지만 처리함 : %s%n", e.getMessage());
+			e.printStackTrace();
+		}
+        System.out.println("프로그램 종료합니다.");
+        
+    }
+}
