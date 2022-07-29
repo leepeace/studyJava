@@ -18,4 +18,16 @@ public class WeatherMain {
 		
 	}//end main
 	
+	private void createGUI() {
+		
+	}
+	
+	private void addEvent() {
+		
+	}
+	
+	private void showList() {
+		
+	}
+	
 }

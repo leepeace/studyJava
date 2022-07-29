@@ -64,14 +64,12 @@ public class WeatherDAO {
 	}
 	
 	/*
-	 ELEMENT_NODE = 1
-	 TEXT_NODE = 3
+	 ELEMENT_NODE(요소 노드) = 1
+	 TEXT_NODE(텍스트 노드) = 3 -> 줄바꿈과 공백등을 포함한 HTML 문서내의 텍스트
 	 */
 	//파싱
 	public void parse(Node node) {
 		//자식 노드들 가져오기
-		//System.out.println(node);
-		
 		NodeList n1 = node.getChildNodes();
 		int length = n1.getLength();
 		
