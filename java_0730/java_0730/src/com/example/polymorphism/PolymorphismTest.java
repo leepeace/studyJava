@@ -18,7 +18,18 @@ public class PolymorphismTest {
 		
 		//실제 인스턴스의 멤버 개수보다 참조변수가 사용할 수 있는 멤버의 개수가 더 많아지므로 문제가 발생할 가능성이 있다.
 		//따라서, 형변환을 생략할 수 없다.
-		CaptionTv c1 = (CaptionTv)new Tv();
+		CaptionTv c1 = (CaptionTv)t1;
+		c1.caption();//가능 O
+		
+		
+		//참조변수의 타입을 변환하는 것이지 인스턴스를 변환하는 것은 아니기 때문에 참조변수의 형변환은 인스턴스에 아무런 영향을 미치지 않음
+		//CaptionTv c2 = (CaptionTv)new Tv();
+		
+		CaptionTv c3 = new CaptionTv();
+		if(c3 instanceof Tv) {
+			Tv t2 = c3;	
+			System.out.println("형변환이 가능하다.");
+		}
 		
 		
 	}

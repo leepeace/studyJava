@@ -1,7 +1,7 @@
 package com.example.polymorphism;
 
 //부모 클래스
-public class Tv {
+/*public class Tv {
 	
 	boolean power;
 	int channel;
@@ -19,3 +19,4 @@ public class Tv {
 	}
 	
 }
+*/
