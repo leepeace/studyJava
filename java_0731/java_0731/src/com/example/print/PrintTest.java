@@ -12,7 +12,7 @@ public class PrintTest {
 		
 		//toString() 생략 가능함
 		/* Object.toString()이 호출됨
-		 * 
+		 * "클래스명@해시코드값" 형태로 문자열 리턴
 		 * public String toString() {
          *		return getClass().getName() + "@" + Integer.toHexString(hashCode());
          * }
